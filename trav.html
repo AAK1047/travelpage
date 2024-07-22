@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Voyages</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Links -->
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Google Fonts Links -->
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  </head>
+  <body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+      
+        <a class="navbar-brand" href="trav.html" id="logo"><span id="travel"><img src="./images/logo.png" alt="no image" width="200px" height="200px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+          
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#book">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+         </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- <Home> -->
+
+  <div id="home" class="home">
+    <div class="content">
+        <h5>Imperial Voyages</h5>
+        <h1>Journey Through Kingdoms and Beyond</h1>
+        <p><b style="color: rgb(12, 125, 169);">Imperial Voyages</b> invites you to experience the world with unmatched elegance and grandeur. Our curated travel experiences are designed for those who seek the royal treatment in every destination. From majestic landscapes to opulent accommodations, we offer journeys that are as sophisticated as they are unforgettable. Discover regal escapes, explore hidden gems, and embark on adventures worthy of royalty. Join us and travel like a sovereign with every step.</p>
+        <a href="#book">Book Place</a>
+    </div>
+</div>
+<div id="book">
+  
+  <div id="cont" class="container mt-5">
+    <h2 class="text-center mb-4">Book Your Trip</h2>
+    <form action="#" method="POST">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="destination" class="form-label">Destination</label>
+                <input type="text" class="form-control" id="destination" name="destination" placeholder="Where would you like to go?" required>
+            </div>
+            <div class="col-md-6">
+                <label for="travelers" class="form-label">Number of Travelers</label>
+                <input type="number" class="form-control" id="travelers" name="travelers" min="1" placeholder="How many travelers?" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="arrivalDate" class="form-label">Arrival Date</label>
+                <input type="date" class="form-control" id="arrivalDate" name="arrivalDate" required>
+            </div>
+            <div class="col-md-6">
+                <label for="departureDate" class="form-label">Departure Date</label>
+                <input type="date" class="form-control" id="departureDate" name="departureDate" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="contactName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="contactName" name="contactName" placeholder="Your full name" required>
+        </div>
+        <div class="mb-3">
+            <label for="contactEmail" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Your email address" required>
+        </div>
+        <div class="mb-3">
+            <label for="additionalInfo" class="form-label">Additional Information</label>
+            <textarea class="form-control" id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any special requests or information?" required></textarea>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn " id="subm">Book Now</button>
+        </div>
+    </form>
+  </div>
+  
+</div>
+<section class="packages" id="packages">
+  <div class="container">
+     <div class="main-txt">
+        <h1><span>PACKAGES</span></h1>
+     </div>
+     
+     <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+           <div class="card">
+              <img src="./images/uk.png" alt="">
+              <div class="card-body">
+                 <h3>United Kingdom</h3>
+                 <p>Experience the charm and history of the United Kingdom. From the bustling streets of London to the serene landscapes of the Scottish Highlands, there's something for everyone.</p>
+                 <div class="start">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star "></i>
+                 </div>
+                 <h6>Price: <strong>$500</strong></h6>
+                 <a href="#book">Book Now</a>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+           <div class="card">
+              <img src="./images/france.png" alt="">
+              <div class="card-body">
+                 <h3>France</h3>
+                 <p>Indulge in the romance and elegance of France. Visit iconic landmarks like the Eiffel Tower, enjoy gourmet cuisine, and explore the beautiful countryside.</p>
+                 <div class="start">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star "></i>
+                 </div>
+                 <h6>Price: <strong>$555</strong></h6>
+                 <a href="#book">Book Now</a>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+           <div class="card">
+              <img src="./images/pakistan.png" alt="">
+              <div class="card-body">
+                 <h3>Pakistan</h3>
+                 <p>Discover the rich culture and natural beauty of Pakistan. From the majestic peaks of the Himalayas to the vibrant cities, Pakistan offers a unique and unforgettable experience.</p>
+                 <div class="start">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star "></i>
+                 </div>
+                 <h6>Price: <strong>$400</strong></h6>
+                 <a href="#book">Book Now</a>
+              </div>
+           </div>
+        </div>
+     </div>
+
+     <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+           <div class="card">
+              <img src="./images/italy.png" alt="">
+              <div class="card-body">
+                 <h3>Italy</h3>
+                 <p>Immerse yourself in the art, history, and cuisine of Italy. Explore ancient ruins, enjoy world-renowned food, and experience the vibrant culture of this beautiful country.</p>
+                 <div class="start">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star "></i>
+                 </div>
+                 <h6>Price: <strong>$525</strong></h6>
+                 <a href="#book">Book Now</a>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+           <div class="card">
+              <img src="./images/india.png" alt="">
+              <div class="card-body">
+                 <h3>India</h3>
+                 <p>Experience the vibrant colors and rich traditions of India. Visit iconic landmarks, enjoy diverse cuisine, and immerse yourself in the unique culture and history of this incredible country.</p>
+                 <div class="start">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star "></i>
+                 </div>
+                 <h6>Price: <strong>$450</strong></h6>
+                 <a href="#book">Book Now</a>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+           <div class="card">
+              <img src="./images/us.png" alt="">
+              <div class="card-body">
+                 <h3>United States</h3>
+                 <p>Vibrant cities, stunning landscapes, and diverse culture.From New York’s skyline to the Grand Canyon, explore rich history, exciting attractions, and delicious cuisine across this vast and varied land.</p>
+                 <div class="start">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star "></i>
+                 </div>
+                 <h6>Price: <strong>$600</strong></h6>
+                 <a href="#book">Book Now</a>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>
+<section class="services" id="services">
+  <div class="container">
+      <div class="section-header">
+          <h1>SERVICES</h1>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="fa-solid fa-hotel"></i>
+                  <h3>Luxury Accommodation</h3>
+                  <p>Experience opulent stays in top-rated hotels and resorts, tailored to your preferences.</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="fa-solid fa-plane"></i>
+                  <h3>Fast and Reliable Flights</h3>
+                  <p>Travel with ease and comfort on our premium flight services, ensuring timely arrivals.</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="fa-solid fa-utensils"></i>
+                  <h3>Gourmet Dining</h3>
+                  <p>Indulge in world-class cuisine at handpicked restaurants and dining experiences.</p>
+              </div>
+          </div>
+          
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="fa-solid fa-bullhorn"></i>
+                  <h3>Expert Tour Guides</h3>
+                  <p>Learn about the history and culture of your destination from knowledgeable guides.</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="fa-solid fa-shuttle-van"></i>
+                  <h3>Private Transfers</h3>
+                  <p>Enjoy seamless and comfortable private transfers between destinations.</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="service-box">
+                  <i class="fa-solid fa-spa"></i>
+                  <h3>Relaxation and Wellness</h3>
+                  <p>Unwind with our exclusive spa treatments and wellness packages.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="gallery" id="gallery">
+  <div class="container">
+      <div class="section-header">
+          <h1><span>G</span>ALLERY</h1>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="gallery-item">
+                  <img src="./images/landscape.webp" alt="Gallery Image 1">
+                  <div class="overlay">
+                      <div class="text">Beautiful Landscape</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="gallery-item">
+                  <img src="./images/Mountain.webp" alt="Gallery Image 2">
+                  <div class="overlay">
+                      <div class="text">Majestic Mountains</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="gallery-item">
+                  <img src="./images/beach.jpg" alt="Gallery Image 3">
+                  <div class="overlay">
+                      <div class="text">Sunny Beaches</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="gallery-item">
+                  <img src="./images/historic.jpg" alt="Gallery Image 4">
+                  <div class="overlay">
+                      <div class="text">Historic Sites</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="gallery-item">
+                  <img src="./images/cities.jpg" alt="Gallery Image 5">
+                  <div class="overlay">
+                      <div class="text">Vibrant Cities</div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+              <div class="gallery-item">
+                  <img src="./images/countryside.jpg" alt="Gallery Image 6">
+                  <div class="overlay">
+                      <div class="text">Peaceful Countryside</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container">
+      <div class="section-header">
+          <h1><span>A</span>BOUT US</h1>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="about-text">
+                  <h2>Discover Our Story</h2>
+                  <p>At Imperial Voyages, we are passionate about curating exceptional travel experiences. With a keen eye for detail and a dedication to excellence, our team ensures that every journey you embark on is unforgettable.</p>
+                  <p>We blend tradition with innovation, offering personalized services and exploring new destinations to cater to your every need. Join us, and let us help you make your travel dreams a reality.</p>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="about-image">
+                  <img src="./images/about.png"   alt="About Us">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="footer-section">
+                  <h3>Contact Us</h3>
+                  <p><i class="fa-solid fa-location-dot"></i> 123 Royal Street, New York, NY, USA</p>
+                  <p><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+                  <p><i class="fa-solid fa-envelope"></i> info@imperialvoyages.com</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="footer-section">
+                  <h3>Quick Links</h3>
+                  <ul>
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#book">Book</a></li>
+                      <li><a href="#packages">Packages</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#gallery">Gallery</a></li>
+                      <li><a href="#about">About Us</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="footer-section">
+                  <h3>Follow Us</h3>
+                  <div class="social-icons">
+                      <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="text-center mt-4">
+          <p>&copy; 2024 Imperial Voyages. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+  </body>
+</html>
