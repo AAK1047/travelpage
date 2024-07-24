@@ -235,7 +235,7 @@ h2 {
 
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 250px;
   display: block;
   border-radius: 10px;
   transition: transform 0.3s ease;
