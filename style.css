@@ -295,7 +295,7 @@ h2 {
 }
 
 .about-image img {
-  width: 400px;
+  width: 100%;
   height: auto;
   /* margin-left: 200px; */
   border-radius: 10px;
